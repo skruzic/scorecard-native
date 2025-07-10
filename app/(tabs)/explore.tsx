@@ -1,7 +1,8 @@
 import { TournamentCreator } from "@/components/TournamentCreator";
 import { TournamentList } from "@/components/TournamentList";
 import React from "react";
-import { SafeAreaView, ScrollView, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function TournamentScreen() {
   return (
