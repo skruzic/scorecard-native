@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "scorecard-native",
+    "name": "Scorecard",
     "slug": "scorecard-native",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.scorecardnative"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +38,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a82668f6-ce66-47fb-a52e-f0ee333b0812"
+      }
     }
   }
 }
