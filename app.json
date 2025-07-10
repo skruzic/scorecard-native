@@ -8,16 +8,20 @@
     "scheme": "scorecardnative",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "package": "com.anonymous.scorecardnative"
+      "package": "com.anonymous.scorecardnative",
+      "statusBar": {
+        "backgroundColor": "#ffffff",
+        "barStyle": "dark-content"
+      },
+      "navigationBar": {
+        "backgroundColor": "#f8fafc",
+        "barStyle": "dark-content"
+      }
     },
     "web": {
       "bundler": "metro",

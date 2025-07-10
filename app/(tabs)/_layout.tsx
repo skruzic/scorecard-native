@@ -1,7 +1,6 @@
 import { IconSymbol } from "@/components/ui/IconSymbol";
 import { Tabs } from "expo-router";
 import React from "react";
-import { Platform } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function TabLayout() {
@@ -14,21 +13,14 @@ export default function TabLayout() {
         tabBarInactiveTintColor: "#8E8E93",
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: "#ffffff",
+          backgroundColor: "#f8fafc",
           borderTopWidth: 1,
           borderTopColor: "#e5e7eb",
-          height:
-            Platform.OS === "ios"
-              ? 80 + insets.bottom
-              : Math.max(70, 50 + insets.bottom),
-          paddingBottom: Math.max(Platform.OS === "ios" ? insets.bottom : 8, 8),
-          paddingTop: 10,
-          paddingLeft: Math.max(insets.left, 0),
-          paddingRight: Math.max(insets.right, 0),
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          right: 0,
+          height: 60 + insets.bottom,
+          paddingBottom: Math.max(insets.bottom, 8),
+          paddingTop: 8,
+          paddingLeft: insets.left,
+          paddingRight: insets.right,
         },
         tabBarLabelStyle: {
           fontSize: 12,

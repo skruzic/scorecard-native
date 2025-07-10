@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+    <defs>
+        <style>
+            .club-fill { fill: #2d3748; }
+            .background { fill: #ffffff; }
+        </style>
+    </defs>
+
+    <!-- White background -->
+    <rect class="background" width="1024" height="1024" rx="180" />
+
+    <!-- Club suit icon centered and scaled up -->
+    <g transform="translate(512, 512) scale(16) translate(-12, -12)">
+        <!-- Club shape filled -->
+        <path class="club-fill"
+            d="M17.28 9.05a5.5 5.5 0 1 0-10.56 0A5.5 5.5 0 1 0 12 17.66a5.5 5.5 0 1 0 5.28-8.6Z" />
+        <!-- Stem filled -->
+        <path class="club-fill" d="M12 17.66L12 22" stroke="none" stroke-width="2"
+            stroke-linecap="round" />
+        <!-- Make stem thicker as a rectangle -->
+        <rect class="club-fill" x="11" y="17.66" width="2" height="4.34" rx="1" />
+    </g>
+</svg>

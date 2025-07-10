@@ -6,7 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function TournamentScreen() {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={styles.container} edges={["top", "left", "right"]}>
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         <TournamentCreator />
         <TournamentList />
@@ -22,5 +22,6 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: 16,
+    paddingBottom: 80, // Extra space for tab bar
   },
 });

@@ -19,7 +19,6 @@ export default function RootLayout() {
   });
 
   if (!loaded) {
-    // Async font loading only occurs in development.
     return null;
   }
 
@@ -33,7 +32,11 @@ export default function RootLayout() {
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             <Stack.Screen name="+not-found" />
           </Stack>
-          <StatusBar style="auto" />
+          <StatusBar
+            style="dark"
+            backgroundColor="#ffffff"
+            translucent={false}
+          />
         </ThemeProvider>
       </TournamentProvider>
     </SafeAreaProvider>
